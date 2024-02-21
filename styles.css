@@ -1,0 +1,220 @@
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+ --DarkRaspberry: hsl(332, 51%, 32%);
+
+--White: hsl(0, 0%, 100%);
+--RoseWhite: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--LightGrey: hsl(30, 18%, 87%);
+--WengeBrown: hsl(30, 10%, 34%);
+--DarkCharcoal: hsl(24, 5%, 18%);
+}
+*{
+    box-sizing: border-box;
+    margin:0 auto;
+    padding: 0;
+    
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+main{
+    margin: 0 auto;
+    background-color: var(--Eggshell);
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+
+#card{
+    background-color: white;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 15px;
+
+    #dish-pic, h1{
+        margin-bottom: 1.7rem;
+    }
+
+    li{
+        margin-bottom: 0.75rem;
+    }
+}
+
+
+
+h1{
+    font-size: 2.3rem;
+}
+
+ h2{
+        margin-bottom: 1.2rem;
+    }
+
+h3{
+    margin-bottom: 1.1rem;
+}    
+
+li{
+    margin-left: 1.5rem;
+}
+
+span{
+    font-weight: bold;
+}
+
+#prep-sec{
+    background-color: var(--RoseWhite);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#dish-pic{
+width:100%;
+height:240px;
+object-fit: fill;
+border-radius: 10px;
+}
+
+h1,h2{
+    font-family: "Young Serif", sans-serif;
+}
+
+h2{
+    font-weight: 400;
+    color: var(--Nutmeg);
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+h3,p, li, tr{
+    font-family: "Outfit", sans-serif;
+}
+
+p,li, tr th:first-child{
+    color: var(--WengeBrown);
+}
+/*Con el pseudoelemento marker apuntamos al simpolito o numerito de una lista*/
+li::marker{
+    color: var(--DarkRaspberry);
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+}
+h3, tr th:nth-child(2){
+    color: var(--DarkRaspberry);
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table tr th{
+    padding: 10px 0;
+}
+
+tr th:first-child{
+    font-weight: 400;
+    width:50%;
+    padding-left: 1rem;
+}
+
+tr th:nth-child(2){
+    width: 50%;
+}
+
+tr{
+    border-bottom: 1px solid var(--LightGrey);
+    width: 100%;
+    margin-bottom: -2rem;
+}
+
+#ingredients-sec, #instruc-sec{
+    border-bottom: 1px solid var(--LightGrey);
+    padding-bottom: 1rem;
+}
+
+#instruc-sec, #nutrition-sec{
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 900px){
+    #card{
+        width:80%;
+    }
+}
+
+@media  screen and (max-width: 700px){
+    html{
+        font-size: 15px;
+    }
+
+   
+}
+
+@media screen and (max-width: 450px){
+    html{
+        font-size: 15px;
+    }
+
+    #card{
+        width: 100%;
+    }
+}
+
+
+
+@media  screen and (max-width: 375px) {
+    html{
+        font-size: 14px;
+    }
+
+   main{
+    min-height: 100vh;
+    padding: 0;
+   }
+    
+    
+
+    #card{
+        width: 100vw;
+        height: 100%;
+        border-radius: 0;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #dish-pic{
+        border-radius: 0;
+    }
+
+    #mobile-ctrl{
+        padding: 2rem;
+    }
+
+
+}
+
+.attribution {
+     font-size: 11px; text-align: center; }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); }
+    
